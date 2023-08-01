@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TransactionModel : Identifiable {
+struct Transaction : Identifiable {
     let id: Int
     let date: String
     let institution: String
@@ -21,6 +21,14 @@ struct TransactionModel : Identifiable {
     var isTransfer: Bool
     var isExpense: Bool
     var isEdited: Bool
+    
+    var dateParsed : Date {
+        date.dateParsed()
+    }
+    
+    var signedAmount : Double {
+        type == TransactionType.credit.rawValue ? amount : -amount
+    }
 }
 
 enum TransactionType: String {
