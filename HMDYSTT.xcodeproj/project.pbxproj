@@ -11,6 +11,8 @@
 		0338166B2A799166005627B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0338166A2A799166005627B5 /* ContentView.swift */; };
 		0338166D2A799167005627B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0338166C2A799167005627B5 /* Assets.xcassets */; };
 		033816702A799167005627B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0338166F2A799167005627B5 /* Preview Assets.xcassets */; };
+		033816772A799578005627B5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033816762A799578005627B5 /* Extensions.swift */; };
+		033816792A7998A5005627B5 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033816782A7998A5005627B5 /* TransactionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		0338166A2A799166005627B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0338166C2A799167005627B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0338166F2A799167005627B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		033816762A799578005627B5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		033816782A7998A5005627B5 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				0338166A2A799166005627B5 /* ContentView.swift */,
 				0338166C2A799167005627B5 /* Assets.xcassets */,
 				0338166E2A799167005627B5 /* Preview Content */,
+				033816762A799578005627B5 /* Extensions.swift */,
+				033816782A7998A5005627B5 /* TransactionModel.swift */,
 			);
 			path = HMDYSTT;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033816792A7998A5005627B5 /* TransactionModel.swift in Sources */,
 				0338166B2A799166005627B5 /* ContentView.swift in Sources */,
+				033816772A799578005627B5 /* Extensions.swift in Sources */,
 				033816692A799166005627B5 /* HMDYSTTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
