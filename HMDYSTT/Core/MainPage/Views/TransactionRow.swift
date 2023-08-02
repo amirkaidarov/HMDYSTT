@@ -17,7 +17,7 @@ struct TransactionRow: View {
                 .fill(Color.icon.opacity(0.3))
                 .frame(width: 44, height:44)
                 .overlay {
-                    FontIcon.text(.awesome5Solid(code: .icons),
+                    FontIcon.text(.awesome5Solid(code: transaction.icon),
                                   fontsize: 24,
                                   color: Color.icon)
                 }
@@ -57,19 +57,6 @@ struct TransactionRow: View {
 
 struct TransactionRow_Previews: PreviewProvider {
     static var previews: some View {
-        TransactionRow(transaction: Transaction(id: 1,
-                                                date: "01/01/2012",
-                                                institution: "Ins",
-                                                account: "Acc",
-                                                merchant: "Merchant",
-                                                amount: 12,
-                                                type: "debit",
-                                                categoryId: 12,
-                                                category: "Cat",
-                                                isPending: false,
-                                                isTransfer: true,
-                                                isExpense: false,
-                                                isEdited: true)
-        )
+        TransactionRow(transaction: transactionPreviewData)
     }
 }
